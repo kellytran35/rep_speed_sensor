@@ -1,0 +1,2 @@
+source /Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build/gdbinit/symbols
+source /Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build/gdbinit/connect
