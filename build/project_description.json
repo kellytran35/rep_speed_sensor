@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "project-name",
-    "project_version":    "1",
+    "project_version":    "bd2a08f-dirty",
     "project_path":       "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name",
     "idf_path":           "/Users/kellytran/esp/v5.5.1/esp-idf",
     "build_dir":          "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build",
