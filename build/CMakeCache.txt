@@ -355,9 +355,6 @@ PYTHON:UNINITIALIZED=/Users/kellytran/.espressif/python_env/idf5.5_py3.9_env/bin
 //No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
 
-//No help, variable specified on the command line.
-SDKCONFIG:UNINITIALIZED=/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/sdkconfig
-
 //Allow unsafe builds. These builds ARE NOT SECURE.
 UNSAFE_BUILD:BOOL=OFF
 
