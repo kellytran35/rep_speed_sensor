@@ -309,6 +309,21 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build/esp-idf/esp_vfs_console/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build/esp-idf/vfs/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build/esp-idf/spiffs/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build/esp-idf/main/cmake_install.cmake")
 endif()
 

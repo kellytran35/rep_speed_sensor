@@ -30,6 +30,12 @@ $<TARGET_FILE:__idf_esp_app_format>
 $<TARGET_FILE:__idf_esp_bootloader_format>
 $<TARGET_FILE:idf::esp_mm>
 $<TARGET_FILE:__idf_esp_mm>
+$<TARGET_FILE:__idf_vfs>
+$<TARGET_FILE:__idf_esp_driver_uart>
+$<TARGET_FILE:__idf_esp_ringbuf>
+$<TARGET_FILE:idf::vfs>
+$<TARGET_FILE:__idf_esp_driver_usb_serial_jtag>
+$<TARGET_FILE:__idf_esp_vfs_console>
 $<TARGET_FILE:__idf_esp_security>
 $<TARGET_FILE:__idf_pthread>
 $<TARGET_FILE:idf::esp_driver_gpio>
@@ -70,7 +76,6 @@ $<TARGET_FILE:idf::esp_driver_rmt>
 $<TARGET_FILE:idf::esp_driver_tsens>
 $<TARGET_FILE:idf::esp_driver_sdm>
 $<TARGET_FILE:idf::esp_driver_i2c>
-$<TARGET_FILE:__idf_esp_ringbuf>
 $<TARGET_FILE:idf::esp_driver_uart>
 $<TARGET_FILE:idf::esp_driver_ledc>
 $<TARGET_FILE:idf::esp_driver_usb_serial_jtag>
@@ -86,11 +91,12 @@ $<TARGET_FILE:__idf_esp_driver_rmt>
 $<TARGET_FILE:__idf_esp_driver_tsens>
 $<TARGET_FILE:__idf_esp_driver_sdm>
 $<TARGET_FILE:__idf_esp_driver_i2c>
-$<TARGET_FILE:__idf_esp_driver_uart>
 $<TARGET_FILE:__idf_esp_driver_ledc>
-$<TARGET_FILE:__idf_esp_driver_usb_serial_jtag>
 $<TARGET_FILE:__idf_esp_driver_twai>
 $<TARGET_FILE:idf::ultrasonic>
 $<TARGET_FILE:__idf_driver>
+$<TARGET_FILE:idf::esp_vfs_console>
+$<TARGET_FILE:idf::spiffs>
 $<TARGET_FILE:idf::main>
 $<TARGET_FILE:__idf_ultrasonic>
+$<TARGET_FILE:__idf_spiffs>

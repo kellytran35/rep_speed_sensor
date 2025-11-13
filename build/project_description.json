@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "project-name",
-    "project_version":    "bd2a08f-dirty",
+    "project_version":    "bbd0fd0-dirty",
     "project_path":       "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name",
     "idf_path":           "/Users/kellytran/esp/v5.5.1/esp-idf",
     "build_dir":          "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build",
@@ -21,12 +21,12 @@
     "monitor_toolprefix": "xtensa-esp32s3-elf-",
     "c_compiler":         "/Users/kellytran/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "/Users/kellytran/esp/v5.5.1/esp-idf/components/driver/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/efuse/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_common/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_dac/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_gpio/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_gptimer/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_i2c/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_i2s/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_ledc/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_parlio/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_pcnt/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_rmt/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_sdm/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_spi/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_tsens/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_twai/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_uart/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_hw_support/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_mm/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_partition/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_pm/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_ringbuf/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_security/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_system/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_timer/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/freertos/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/hal/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/heap/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/log/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/mbedtls/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/newlib/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/pthread/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/soc/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS" : "/Users/kellytran/esp/v5.5.1/esp-idf/components/driver/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/efuse/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_common/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_dac/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_gpio/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_gptimer/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_i2c/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_i2s/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_ledc/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_parlio/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_pcnt/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_rmt/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_sdm/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_spi/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_tsens/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_twai/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_uart/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_hw_support/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_mm/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_partition/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_pm/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_ringbuf/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_security/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_system/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_timer/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/freertos/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/hal/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/heap/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/log/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/mbedtls/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/newlib/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/pthread/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/soc/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/spiffs/Kconfig;/Users/kellytran/esp/v5.5.1/esp-idf/components/vfs/Kconfig",
         "COMPONENT_KCONFIGS_PROJBUILD" : "/Users/kellytran/esp/v5.5.1/esp-idf/components/bootloader/Kconfig.projbuild;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_app_format/Kconfig.projbuild;/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig.projbuild;/Users/kellytran/esp/v5.5.1/esp-idf/components/esptool_py/Kconfig.projbuild;/Users/kellytran/esp/v5.5.1/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "driver", "efuse", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_hw_support", "esp_idf_lib_helpers", "esp_mm", "esp_partition", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "newlib", "partition_table", "pthread", "sdmmc", "soc", "spi_flash", "ultrasonic", "xtensa", "" ],
-    "build_component_paths" : [ "/Users/kellytran/esp/v5.5.1/esp-idf/components/app_update", "/Users/kellytran/esp/v5.5.1/esp-idf/components/bootloader", "/Users/kellytran/esp/v5.5.1/esp-idf/components/bootloader_support", "/Users/kellytran/esp/v5.5.1/esp-idf/components/cxx", "/Users/kellytran/esp/v5.5.1/esp-idf/components/driver", "/Users/kellytran/esp/v5.5.1/esp-idf/components/efuse", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_app_format", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_bootloader_format", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_common", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_dac", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_gpio", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_gptimer", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_i2c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_i2s", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_ledc", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_parlio", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_pcnt", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_rmt", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_sdio", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_sdm", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_sdmmc", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_sdspi", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_spi", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_tsens", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_twai", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_uart", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_hw_support", "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/components/esp_idf_lib_helpers", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_mm", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_partition", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_pm", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_ringbuf", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_rom", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_security", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_system", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_timer", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esptool_py", "/Users/kellytran/esp/v5.5.1/esp-idf/components/freertos", "/Users/kellytran/esp/v5.5.1/esp-idf/components/hal", "/Users/kellytran/esp/v5.5.1/esp-idf/components/heap", "/Users/kellytran/esp/v5.5.1/esp-idf/components/log", "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/main", "/Users/kellytran/esp/v5.5.1/esp-idf/components/mbedtls", "/Users/kellytran/esp/v5.5.1/esp-idf/components/newlib", "/Users/kellytran/esp/v5.5.1/esp-idf/components/partition_table", "/Users/kellytran/esp/v5.5.1/esp-idf/components/pthread", "/Users/kellytran/esp/v5.5.1/esp-idf/components/sdmmc", "/Users/kellytran/esp/v5.5.1/esp-idf/components/soc", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash", "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/components/ultrasonic", "/Users/kellytran/esp/v5.5.1/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "driver", "efuse", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_hw_support", "esp_idf_lib_helpers", "esp_mm", "esp_partition", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "newlib", "partition_table", "pthread", "sdmmc", "soc", "spi_flash", "spiffs", "ultrasonic", "vfs", "xtensa", "" ],
+    "build_component_paths" : [ "/Users/kellytran/esp/v5.5.1/esp-idf/components/app_update", "/Users/kellytran/esp/v5.5.1/esp-idf/components/bootloader", "/Users/kellytran/esp/v5.5.1/esp-idf/components/bootloader_support", "/Users/kellytran/esp/v5.5.1/esp-idf/components/cxx", "/Users/kellytran/esp/v5.5.1/esp-idf/components/driver", "/Users/kellytran/esp/v5.5.1/esp-idf/components/efuse", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_app_format", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_bootloader_format", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_common", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_dac", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_gpio", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_gptimer", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_i2c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_i2s", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_ledc", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_parlio", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_pcnt", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_rmt", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_sdio", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_sdm", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_sdmmc", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_sdspi", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_spi", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_tsens", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_twai", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_uart", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_hw_support", "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/components/esp_idf_lib_helpers", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_mm", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_partition", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_pm", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_ringbuf", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_rom", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_security", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_system", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_timer", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_vfs_console", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esptool_py", "/Users/kellytran/esp/v5.5.1/esp-idf/components/freertos", "/Users/kellytran/esp/v5.5.1/esp-idf/components/hal", "/Users/kellytran/esp/v5.5.1/esp-idf/components/heap", "/Users/kellytran/esp/v5.5.1/esp-idf/components/log", "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/main", "/Users/kellytran/esp/v5.5.1/esp-idf/components/mbedtls", "/Users/kellytran/esp/v5.5.1/esp-idf/components/newlib", "/Users/kellytran/esp/v5.5.1/esp-idf/components/partition_table", "/Users/kellytran/esp/v5.5.1/esp-idf/components/pthread", "/Users/kellytran/esp/v5.5.1/esp-idf/components/sdmmc", "/Users/kellytran/esp/v5.5.1/esp-idf/components/soc", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spiffs", "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/components/ultrasonic", "/Users/kellytran/esp/v5.5.1/esp-idf/components/vfs", "/Users/kellytran/esp/v5.5.1/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -460,7 +460,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build/esp-idf/esp_driver_uart/libesp_driver_uart.a",
-            "sources": [ "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_wakeup.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uhci.c" ],
+            "sources": [ "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_wakeup.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uhci.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_usb_serial_jtag": {
@@ -475,7 +475,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build/esp-idf/esp_driver_usb_serial_jtag/libesp_driver_usb_serial_jtag.a",
-            "sources": [ "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_connection_monitor.c" ],
+            "sources": [ "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_connection_monitor.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_vfs.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_hw_support": {
@@ -628,6 +628,21 @@
             "sources": [ "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_timer/src/esp_timer.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_timer/src/esp_timer_init.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_timer/src/ets_timer_legacy.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_timer/src/system_time.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_timer/src/esp_timer_impl_common.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c" ],
             "include_dirs": [ "include" ]
         },
+        "esp_vfs_console": {
+            "alias": "idf::esp_vfs_console",
+            "target": "___idf_esp_vfs_console",
+            "prefix": "idf",
+            "dir": "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_vfs_console",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_vfs_console",
+            "reqs": [],
+            "priv_reqs": [ "vfs", "esp_driver_uart", "esp_driver_usb_serial_jtag" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build/esp-idf/esp_vfs_console/libesp_vfs_console.a",
+            "sources": [ "/Users/kellytran/esp/v5.5.1/esp-idf/components/esp_vfs_console/vfs_console.c" ],
+            "include_dirs": [ "include" ]
+        },
         "esptool_py": {
             "alias": "idf::esptool_py",
             "target": "___idf_esptool_py",
@@ -711,7 +726,7 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash", "esp_driver_gpio", "ultrasonic" ],
+            "priv_reqs": [ "spi_flash", "esp_driver_gpio", "ultrasonic", "spiffs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build/esp-idf/main/libmain.a",
@@ -823,6 +838,21 @@
             "sources": [ "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/flash_brownout_hook.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_hpm_enable.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_drivers.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_generic.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_issi.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_mxic.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_gd.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_winbond.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_boya.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_mxic_opi.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_th.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/memspi_host_driver.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/cache_utils.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/flash_mmap.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/flash_ops.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_wrap.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/esp_flash_api.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/esp_flash_spi_init.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_os_func_app.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_os_func_noos.c" ],
             "include_dirs": [ "include" ]
         },
+        "spiffs": {
+            "alias": "idf::spiffs",
+            "target": "___idf_spiffs",
+            "prefix": "idf",
+            "dir": "/Users/kellytran/esp/v5.5.1/esp-idf/components/spiffs",
+            "type": "LIBRARY",
+            "lib": "__idf_spiffs",
+            "reqs": [ "esp_partition" ],
+            "priv_reqs": [ "bootloader_support", "esptool_py", "vfs" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build/esp-idf/spiffs/libspiffs.a",
+            "sources": [ "/Users/kellytran/esp/v5.5.1/esp-idf/components/spiffs/spiffs_api.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spiffs/spiffs/src/spiffs_cache.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spiffs/spiffs/src/spiffs_check.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spiffs/spiffs/src/spiffs_gc.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spiffs/spiffs/src/spiffs_hydrogen.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spiffs/spiffs/src/spiffs_nucleus.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/spiffs/esp_spiffs.c" ],
+            "include_dirs": [ "include" ]
+        },
         "ultrasonic": {
             "alias": "idf::ultrasonic",
             "target": "___idf_ultrasonic",
@@ -837,6 +867,21 @@
             "file": "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build/esp-idf/ultrasonic/libultrasonic.a",
             "sources": [ "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/components/ultrasonic/ultrasonic.c" ],
             "include_dirs": [ "." ]
+        },
+        "vfs": {
+            "alias": "idf::vfs",
+            "target": "___idf_vfs",
+            "prefix": "idf",
+            "dir": "/Users/kellytran/esp/v5.5.1/esp-idf/components/vfs",
+            "type": "LIBRARY",
+            "lib": "__idf_vfs",
+            "reqs": [],
+            "priv_reqs": [ "esp_timer", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_vfs_console" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/build/esp-idf/vfs/libvfs.a",
+            "sources": [ "/Users/kellytran/esp/v5.5.1/esp-idf/components/vfs/vfs.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/vfs/vfs_eventfd.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/vfs/vfs_semihost.c", "/Users/kellytran/esp/v5.5.1/esp-idf/components/vfs/nullfs.c" ],
+            "include_dirs": [ "include" ]
         },
         "xtensa": {
             "alias": "idf::xtensa",
@@ -2158,7 +2203,7 @@
             "dir": "/Users/kellytran/Desktop/Personal Project Stuff/esp32/led/project-name/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash", "esp_driver_gpio", "ultrasonic" ],
+            "priv_reqs": [ "spi_flash", "esp_driver_gpio", "ultrasonic", "spiffs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": []

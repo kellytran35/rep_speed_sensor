@@ -15710,6 +15710,365 @@
                 "id": "component-config-spi-flash-driver",
                 "title": "SPI Flash driver",
                 "type": "menu"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Define maximum number of partitions that can be mounted.",
+                        "id": "SPIFFS_MAX_PARTITIONS",
+                        "name": "SPIFFS_MAX_PARTITIONS",
+                        "range": [
+                            1,
+                            10
+                        ],
+                        "title": "Maximum Number of Partitions",
+                        "type": "int"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "SPIFFS_CACHE",
+                                        "help": "Enables memory write caching for file descriptors in hydrogen.",
+                                        "id": "SPIFFS_CACHE_WR",
+                                        "name": "SPIFFS_CACHE_WR",
+                                        "range": null,
+                                        "title": "Enable SPIFFS Write Caching",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "SPIFFS_CACHE",
+                                        "help": "Enable/disable statistics on caching. Debug/test purpose only.",
+                                        "id": "SPIFFS_CACHE_STATS",
+                                        "name": "SPIFFS_CACHE_STATS",
+                                        "range": null,
+                                        "title": "Enable SPIFFS Cache Statistics",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": null,
+                                "help": "Enables/disable memory read caching of nucleus file system\noperations.",
+                                "id": "SPIFFS_CACHE",
+                                "name": "SPIFFS_CACHE",
+                                "range": null,
+                                "title": "Enable SPIFFS Cache",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-spiffs-configuration-spiffs-cache-configuration",
+                        "title": "SPIFFS Cache Configuration",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Always check header of each accessed page to ensure consistent state.\nIf enabled it will increase number of reads from flash, especially\nif cache is disabled.",
+                        "id": "SPIFFS_PAGE_CHECK",
+                        "name": "SPIFFS_PAGE_CHECK",
+                        "range": null,
+                        "title": "Enable SPIFFS Page Check",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Define maximum number of GC runs to perform to reach desired free pages.",
+                        "id": "SPIFFS_GC_MAX_RUNS",
+                        "name": "SPIFFS_GC_MAX_RUNS",
+                        "range": [
+                            1,
+                            10000
+                        ],
+                        "title": "Set Maximum GC Runs",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Enable/disable statistics on gc. Debug/test purpose only.",
+                        "id": "SPIFFS_GC_STATS",
+                        "name": "SPIFFS_GC_STATS",
+                        "range": null,
+                        "title": "Enable SPIFFS GC Statistics",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Logical page size of SPIFFS partition, in bytes. Must be multiple\nof flash page size (which is usually 256 bytes).\nLarger page sizes reduce overhead when storing large files, and\nimprove filesystem performance when reading large files.\nSmaller page sizes reduce overhead when storing small (< page size)\nfiles.",
+                        "id": "SPIFFS_PAGE_SIZE",
+                        "name": "SPIFFS_PAGE_SIZE",
+                        "range": [
+                            256,
+                            1024
+                        ],
+                        "title": "SPIFFS logical page size",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "Object name maximum length. Note that this length include the\nzero-termination character, meaning maximum string of characters\ncan at most be SPIFFS_OBJ_NAME_LEN - 1.\n\nSPIFFS_OBJ_NAME_LEN + SPIFFS_META_LENGTH should not exceed\nSPIFFS_PAGE_SIZE - 64.",
+                        "id": "SPIFFS_OBJ_NAME_LEN",
+                        "name": "SPIFFS_OBJ_NAME_LEN",
+                        "range": [
+                            1,
+                            256
+                        ],
+                        "title": "Set SPIFFS Maximum Name Length",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "If this option is enabled, symbolic links are taken into account\nduring partition image creation.",
+                        "id": "SPIFFS_FOLLOW_SYMLINKS",
+                        "name": "SPIFFS_FOLLOW_SYMLINKS",
+                        "range": null,
+                        "title": "Enable symbolic links for image creation",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "SPIFFS_USE_MAGIC",
+                                "help": "If this option is enabled, the magic will also be dependent\non the length of the filesystem. For example, a filesystem\nconfigured and formatted for 4 megabytes will not be accepted\nfor mounting with a configuration defining the filesystem as 2 megabytes.",
+                                "id": "SPIFFS_USE_MAGIC_LENGTH",
+                                "name": "SPIFFS_USE_MAGIC_LENGTH",
+                                "range": null,
+                                "title": "Enable SPIFFS Filesystem Length Magic",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": "Enable this to have an identifiable spiffs filesystem.\nThis will look for a magic in all sectors to determine if this\nis a valid spiffs system or not at mount time.",
+                        "id": "SPIFFS_USE_MAGIC",
+                        "name": "SPIFFS_USE_MAGIC",
+                        "range": null,
+                        "title": "Enable SPIFFS Filesystem Magic",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": "This option sets the number of extra bytes stored in the file header.\nThese bytes can be used in an application-specific manner.\nSet this to at least 4 bytes to enable support for saving file\nmodification time.\n\nSPIFFS_OBJ_NAME_LEN + SPIFFS_META_LENGTH should not exceed\nSPIFFS_PAGE_SIZE - 64.",
+                        "id": "SPIFFS_META_LENGTH",
+                        "name": "SPIFFS_META_LENGTH",
+                        "range": null,
+                        "title": "Size of per-file metadata field",
+                        "type": "int"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SPIFFS_META_LENGTH >= 4",
+                        "help": "If enabled, then the first 4 bytes of per-file metadata will be used\nto store file modification time (mtime), accessible through\nstat/fstat functions.\nModification time is updated when the file is opened.",
+                        "id": "SPIFFS_USE_MTIME",
+                        "name": "SPIFFS_USE_MTIME",
+                        "range": null,
+                        "title": "Save file modification time",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SPIFFS_META_LENGTH >= 8",
+                        "help": "If this option is not set, the time field is 32 bits (up to 2106 year),\notherwise it is 64 bits and make sure it matches SPIFFS_META_LENGTH.\nIf the chip already has the spiffs image with the time field = 32 bits\nthen this option cannot be applied in this case.\nErase it first before using this option.\nTo resolve the Y2K38 problem for the spiffs, use a toolchain with\n64-bit time_t support.",
+                        "id": "SPIFFS_MTIME_WIDE_64_BITS",
+                        "name": "SPIFFS_MTIME_WIDE_64_BITS",
+                        "range": null,
+                        "title": "The time field occupies 64 bits in the image instead of 32 bits",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Enabling this option will print general debug messages to the console.",
+                                "id": "SPIFFS_DBG",
+                                "name": "SPIFFS_DBG",
+                                "range": null,
+                                "title": "Enable general SPIFFS debug",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Enabling this option will print API debug messages to the console.",
+                                "id": "SPIFFS_API_DBG",
+                                "name": "SPIFFS_API_DBG",
+                                "range": null,
+                                "title": "Enable SPIFFS API debug",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Enabling this option will print GC debug messages to the console.",
+                                "id": "SPIFFS_GC_DBG",
+                                "name": "SPIFFS_GC_DBG",
+                                "range": null,
+                                "title": "Enable SPIFFS Garbage Cleaner debug",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SPIFFS_CACHE",
+                                "help": "Enabling this option will print cache debug messages to the console.",
+                                "id": "SPIFFS_CACHE_DBG",
+                                "name": "SPIFFS_CACHE_DBG",
+                                "range": null,
+                                "title": "Enable SPIFFS Cache debug",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Enabling this option will print Filesystem Check debug messages\nto the console.",
+                                "id": "SPIFFS_CHECK_DBG",
+                                "name": "SPIFFS_CHECK_DBG",
+                                "range": null,
+                                "title": "Enable SPIFFS Filesystem Check debug",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Enable this option to enable SPIFFS_vis function in the API.",
+                                "id": "SPIFFS_TEST_VISUALISATION",
+                                "name": "SPIFFS_TEST_VISUALISATION",
+                                "range": null,
+                                "title": "Enable SPIFFS Filesystem Visualization",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "id": "component-config-spiffs-configuration-debug-configuration",
+                        "title": "Debug Configuration",
+                        "type": "menu"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-spiffs-configuration",
+                "title": "SPIFFS Configuration",
+                "type": "menu"
+            },
+            {
+                "children": [
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "VFS_SUPPORT_IO",
+                                "help": "If enabled, the following functions are provided by the VFS component.\n\nstat, link, unlink, rename, utime, access, truncate, rmdir, mkdir,\nopendir, closedir, readdir, readdir_r, seekdir, telldir, rewinddir\n\nFilesystem drivers can then be registered to handle these functions\nfor specific paths.\n\nDisabling this option can save memory when the support for these functions\nis not required.",
+                                "id": "VFS_SUPPORT_DIR",
+                                "name": "VFS_SUPPORT_DIR",
+                                "range": null,
+                                "title": "Provide directory related functions",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "VFS_SUPPORT_SELECT",
+                                        "help": "Select() related functions might produce an inconveniently lot of\ndebug outputs when one sets the default log level to DEBUG or higher.\nIt is possible to suppress these debug outputs by enabling this\noption.",
+                                        "id": "VFS_SUPPRESS_SELECT_DEBUG_OUTPUT",
+                                        "name": "VFS_SUPPRESS_SELECT_DEBUG_OUTPUT",
+                                        "range": null,
+                                        "title": "Suppress select() related debug outputs",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "VFS_SUPPORT_SELECT",
+                                        "help": "If enabled, VFS driver select() callback function will be placed in IRAM.",
+                                        "id": "VFS_SELECT_IN_RAM",
+                                        "name": "VFS_SELECT_IN_RAM",
+                                        "range": null,
+                                        "title": "Make VFS driver select() callbacks IRAM-safe",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "VFS_SUPPORT_IO && !LWIP_USE_ONLY_LWIP_SELECT",
+                                "help": "If enabled, select function is provided by the VFS component, and can be used\non peripheral file descriptors (such as UART) and sockets at the same time.\n\nIf disabled, the default select implementation will be provided by LWIP for\nsockets only.\n\nDisabling this option can reduce code size if support for \"select\" on UART file\ndescriptors is not required.",
+                                "id": "VFS_SUPPORT_SELECT",
+                                "name": "VFS_SUPPORT_SELECT",
+                                "range": null,
+                                "title": "Provide select function",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "VFS_SUPPORT_IO",
+                                "help": "Disabling this option can save memory when the support for termios.h is not required.",
+                                "id": "VFS_SUPPORT_TERMIOS",
+                                "name": "VFS_SUPPORT_TERMIOS",
+                                "range": null,
+                                "title": "Provide termios.h functions",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "VFS_SUPPORT_IO",
+                                "help": "Define maximum number of virtual filesystems that can be registered.",
+                                "id": "VFS_MAX_COUNT",
+                                "name": "VFS_MAX_COUNT",
+                                "range": [
+                                    1,
+                                    20
+                                ],
+                                "title": "Maximum Number of Virtual Filesystems",
+                                "type": "int"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "VFS_SUPPORT_IO",
+                                        "help": "Define maximum number of host filesystem mount points.",
+                                        "id": "VFS_SEMIHOSTFS_MAX_MOUNT_POINTS",
+                                        "name": "VFS_SEMIHOSTFS_MAX_MOUNT_POINTS",
+                                        "range": null,
+                                        "title": "Host FS: Maximum number of the host filesystem mount points",
+                                        "type": "int"
+                                    }
+                                ],
+                                "depends_on": "VFS_SUPPORT_IO",
+                                "id": "component-config-virtual-file-system-provide-basic-i-o-functions-host-file-system-i-o-semihosting-",
+                                "title": "Host File System I/O (Semihosting)",
+                                "type": "menu"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "VFS_SUPPORT_IO",
+                                "help": "If enabled, /dev/null VFS will be automatically initialized at startup.",
+                                "id": "VFS_INITIALIZE_DEV_NULL",
+                                "name": "VFS_INITIALIZE_DEV_NULL",
+                                "range": null,
+                                "title": "Initialize /dev/null VFS",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": "If enabled, the following functions are provided by the VFS component.\n\nopen, close, read, write, pread, pwrite, lseek, fstat, fsync, ioctl, fcntl\n\nFilesystem drivers can then be registered to handle these functions\nfor specific paths.\n\nDisabling this option can save memory when the support for these functions\nis not required.\n\nNote that the following functions can still be used with socket file descriptors\nwhen this option is disabled:\n\nclose, read, write, ioctl, fcntl.",
+                        "id": "VFS_SUPPORT_IO",
+                        "name": "VFS_SUPPORT_IO",
+                        "range": null,
+                        "title": "Provide basic I/O functions",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-virtual-file-system",
+                "title": "Virtual file system",
+                "type": "menu"
             }
         ],
         "depends_on": null,
